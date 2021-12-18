@@ -17,7 +17,7 @@ const UpdateEnrolledCourse = () => {
     // load single booking by booking id from database/server 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/singleCourse/${orderId}`)
+        fetch(`https://dry-cliffs-03340.herokuapp.com/singleCourse/${orderId}`)
             .then((res) => res.json())
             .then((data) => setBooking(data));
     }, [orderId, isUpdate]);
@@ -34,7 +34,7 @@ const UpdateEnrolledCourse = () => {
     // handle update 
 
     const onSubmit = (data) => {
-        fetch(`http://localhost:5000/update/${orderId}`, {
+        fetch(`https://dry-cliffs-03340.herokuapp.com/update/${orderId}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

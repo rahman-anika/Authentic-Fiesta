@@ -12,7 +12,7 @@ const ManageAllCourses = () => {
 
     // all bookings load from database/server
     useEffect(() => {
-        fetch("http://localhost:5000/allEnrolledCourses")
+        fetch("https://dry-cliffs-03340.herokuapp.com/allEnrolledCourses")
             .then((response) => response.json())
             .then((data) => setOrders(data));
     }, []);
@@ -23,7 +23,7 @@ const ManageAllCourses = () => {
     const handleDeleteCourse = id => {
         const proceed = window.confirm('Are you sure you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/deleteCourse/${id}`;
+            const url = `https://dry-cliffs-03340.herokuapp.com/deleteCourse/${id}`;
             fetch(url, {
                 method: 'DELETE'
 

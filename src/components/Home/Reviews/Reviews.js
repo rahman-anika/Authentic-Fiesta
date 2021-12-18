@@ -19,7 +19,7 @@ const Reviews = () => {
 
     // data load from database/server starts 
     useEffect(() => {
-        fetch('http://localhost:5000/allReviews')
+        fetch('https://dry-cliffs-03340.herokuapp.com/allReviews')
             .then(res => res.json())
             .then(data => setReviews(data));
 

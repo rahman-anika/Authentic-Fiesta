@@ -32,7 +32,7 @@ const AddCourse = () => {
 
         // Post/place new order
 
-        fetch(`http://localhost:5000/addCourses`, {
+        fetch(`https://dry-cliffs-03340.herokuapp.com/addCourses`, {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(orderInfo),

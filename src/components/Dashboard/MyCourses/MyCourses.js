@@ -15,7 +15,7 @@ const MyCourses = () => {
     // load all orders by email query from database/server
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myCourses/${email}`)
+        fetch(`https://dry-cliffs-03340.herokuapp.com/myCourses/${email}`)
             .then((res) => res.json())
             .then((data) => setOrders(data));
     }, [email]);

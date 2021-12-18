@@ -34,7 +34,7 @@ const SubmitRecipe = () => {
 
         // Post/place new order
 
-        fetch(`http://localhost:5000/addRecipes`, {
+        fetch(`https://dry-cliffs-03340.herokuapp.com/addRecipes`, {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(orderInfo),

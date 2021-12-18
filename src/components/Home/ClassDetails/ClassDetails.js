@@ -22,7 +22,7 @@ const ClassDetails = () => {
 
     // data loading starts using Services.json file starts 
     useEffect(() => {
-        fetch('http://localhost:5000/allCourses')
+        fetch('https://dry-cliffs-03340.herokuapp.com/allCourses')
             .then(res => res.json())
             .then(data => setData(data))
     }, []);

@@ -17,7 +17,7 @@ const Recipe = () => {
 
     // data load from database/server starts 
     useEffect(() => {
-        fetch('http://localhost:5000/allRecipes')
+        fetch('https://dry-cliffs-03340.herokuapp.com/allRecipes')
             .then(res => res.json())
             .then(data => setServices(data));
 

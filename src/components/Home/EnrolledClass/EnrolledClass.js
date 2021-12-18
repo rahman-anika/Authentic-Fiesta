@@ -23,7 +23,7 @@ const EnrolledClass = () => {
 
     // data loading starts using Services.json file starts 
     useEffect(() => {
-        fetch('http://localhost:5000/allCourses')
+        fetch('https://dry-cliffs-03340.herokuapp.com/allCourses')
             .then(res => res.json())
             .then(data => setData(data))
     }, []);
@@ -58,7 +58,7 @@ const EnrolledClass = () => {
 
         // Post/place new order
 
-        fetch(`http://localhost:5000/enrollCourses`, {
+        fetch(`https://dry-cliffs-03340.herokuapp.com/enrollCourses`, {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(orderInfo),
