@@ -1,0 +1,15 @@
+/* form style starts  */
+.order-confirm-form{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    
+}
+/* form  style ends  */
+  
+.course-image{
+    height:610px;
+    padding-top: 91px;
+
+  }
